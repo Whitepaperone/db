@@ -8,13 +8,8 @@
 </head>
 <body>
   <div class="container">
-   {% if request.user.is_authenticated %}
-     <a href="#">NEW</a>
-     <a href="{% url 'accounts:logout' %}">logout</a>
-   {% else %}
-     <a href="{% url 'accounts:login' %}">login</a>
-     <a href="{% url 'accounts:signup' %}">signup</a>
-   {% endif %}
+     <a href="{% url 'eithers:create' %}">CREATE</a>
+     <a href="{% url 'eithers:random' %}">RANDOM</a>
   {% block content %}
   
   {% endblock content %}

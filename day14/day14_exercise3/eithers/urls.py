@@ -3,7 +3,7 @@ from . import views
 
 app_name='eithers'
 urlpattern =[
-    pathe('', views.index, name='index'),
+    path('', views.index, name='index'),
     path('create/',views.create,name='create'),
     path('random/', views.random, name='random'),
     path('<int:question_pk>/', views.detail, name='detail'),

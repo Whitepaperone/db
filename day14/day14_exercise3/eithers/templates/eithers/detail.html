@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>DETAIL</h1>
+<hr>
+<h2>{{ question.title }}</h2>
+<p><b>=>{{question.issue_a}}</b></p>
+<p><b>=>{{question.issue_b}}</b></p>
+<hr>
+<a href="{% url 'eithers:index' %}">BACK</a>
+{% endblock content %}
+
